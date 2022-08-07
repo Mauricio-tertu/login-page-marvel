@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'lexand deca', sans-serif;
+ 
+
+
+  
+}
+
+:root {
+--white:#fff;
+--whitesmoke: #f9f9f9;
+--light-grey: #ececec;
+--grey: #1a1919;
+--medium-grey: #493d3d;
+--deep-grey: #343434;
+--black: #000000;
+--blue: #1b77f3;
+--red:#cf3c3f;
+}
+.main {
+  display: flex;
+
+  
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 700px;
+  min-height: 150vh;
+  padding: clamp(25px, 5%, 50px);
+  background-image: url('./images/homem-de-ferro.jpg');
+  background-repeat: no-repeat;
+ background-size: 100%;
+  
+ }
+
+  .wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+  }
+    
+     
+  .login__logo {
+    width: 160px;
+    margin-bottom: 1px;
+    margin-top: 100px;
+    
+    
+  }
+  
+.login__title {
+ color: #cf3c3f;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+text-transform: uppercase;
+
+}  
+
+.login__label {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  }
+
+  .input {
+    width: 100%;
+    background-color:  var(--light-grey);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em;
+    padding: 25px 10px 10px;
+    font-weight: 600;
+    color: var(--deep-grey);
+  }
+
+   .login__label span {
+    position: absolute;
+    font-size: 0.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--medium-grey);
+    margin: 20px;
+    cursor: text;
+    transition: al 200ms ease;
+  }
+
+  .input:focus {
+    background-color: var(--whitesmoke);
+    border: 2px solid var(--deep-grey);
+}
+
+.login__label .span-active {
+  font-size: 0.7em;
+  margin: 8px 10px;
+}
+
+.login__icons {
+  display:flex;
+  gap: 10px;
+  width: 100%;
+
+}
+ 
+  
+
+.login__icons img {
+  width: 25px;
+}
+
+.icons__button {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+.login__icons .icons__button:nth-child(1){
+  background-color: var(--blue);
+}
+
+.login__icons .icons__button:nth-child(2){
+  background-color: var(--light-grey);
+}
+
+.login__icons .icons__button:nth-child(3){
+  background-color: var(--black);
+}
+
+.login__label--checkbox {
+
+width: 100%;
+  margin: 15px 0 50px;
+  font-size: 0.9em;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+
+.input--checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: var(--light-grey);
+  margin-right: 8px;
+  border-radius: 3px;
+  
+}
+.input--checkbox:checked {
+  background-color: var(--red);
+
+}
+
+.input--checkbox:checked::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 10px;
+  border: 3px solid #f2f1f6;
+  border-width: 0 3px 3px 0;
+transform: rotate(45deg);
+margin: 2px 6px;
+}
+
+.login__button {
+  width: 70px;
+  height: 70px;
+  padding: 20px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  background-color: #2205f7;
+  border-radius: 35px;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: -620px;
+  
+}
+  
+.login__button svg {
+  fill: #f5f3fc;
+
+}
+
+.login__button:disabled {
+  cursor: auto;
+  background-color: #fff;
+  border: 2px solid var(--light-grey);
+}
+
+.login__button:disabled  svg {
+  fill: var(--grey);
+}
+
+.login__link {
+  font-size: 0.8em;
+  text-decoration: none;
+  color:var(--medium-grey);
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.login__link2 {
+ color: var(--blue);
+} 
+  
+   
+  
+
+
+
+
+
